@@ -1,5 +1,13 @@
 # Machine Learning Acceleration using Intel oneAPI and NVIDIA RAPIDS
 
+## Code Repository
+
+GitHub Link: [https://github.com/siddharthck/255-HW-2](https://github.com/siddharthck/255-HW-2) 
+
+Service used : AWS Sagemaker AI 
+
+This repository includes all code, comparisons, and setup scripts for SageMaker + RAPIDS + PyTorch environments.
+
 ## Introduction
 
 The growing availability of hardware-accelerated machine learning (ML) frameworks has opened new avenues to enhance training performance without compromising accuracy. This report benchmarks and evaluates classical ML models across three platforms:
@@ -62,6 +70,7 @@ All models were executed in an Amazon SageMaker notebook instance using the foll
   ```bash
   conda create -n rapids -c rapidsai -c nvidia -c conda-forge cuml=23.02 python=3.10 cudatoolkit=11.8
   ```
+  Please see setup.sh in code repository.
 * PyTorch and Intel oneAPI models were run in the default PyTorch environment.
 * RAPIDS models were run in the `rapids` kernel, registered with Jupyter using `ipykernel`.
 
@@ -150,6 +159,6 @@ Note: This model is included to provide a contrast in flexibility, scalability, 
 
 GitHub Link: [https://github.com/siddharthck/255-HW-2](https://github.com/siddharthck/255-HW-2)
 
-This notebook includes all code, comparisons, and setup scripts for SageMaker + RAPIDS + PyTorch environments.
+This repository includes all code, comparisons, and setup scripts for SageMaker + RAPIDS + PyTorch environments.
 
 Report prepared by: Siddharth (SJSU, MS Software Engineering)
